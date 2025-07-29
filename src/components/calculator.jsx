@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import "./calculator.css";
 import { evaluate } from "mathjs";
 function Calculator() {
-  const [inputValue, setInputNumber] = useState("");
+  const [inputValue, setInputNumber] = useState("0");
   const displayRef = useRef(null);
 
   const addvalueHandler = (value) => {
