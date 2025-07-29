@@ -1,66 +1,65 @@
-body{
-    display: flex;
-    /* flex-direction: row; */
-    align-items: center;
-    justify-content: center;
+body {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
 }
-.allcalculator{
-    display: grid;
-    width: 390px;
-
+.allcalculator {
+  display: grid;
+  width: 390px;
 }
-.all-buttons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 390px;
-    place-items: center;
-    gap: 10px;
+.all-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 390px;
+  place-items: center;
+  gap: 10px;
 }
 .grey,
 .orange,
-.black{
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    padding: 0;
-    cursor: pointer;line-height: 70px;
-
+.black {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  padding: 0;
+  cursor: pointer;
+  line-height: 70px;
 }
-.grey{
-    background-color: grey;
-
+.grey {
+  background-color: grey;
 }
-.orange{
-    background-color: orange;
-
+.orange {
+  background-color: orange;
 }
-.black{
-    background-color: black;
+.black {
+  background-color: black;
 }
 
-input{
-    border: none;
-    color: white;
-    padding: 150px 10px 10px 10px;
-    text-align: right;
-    background-color: rgba(0, 0, 0, 0);
-    width: 370px;
-    font-size: 50px;
-    overflow-x: auto;
-    white-space: nowrap;
+.display {
+  border: none;
+  color: white;
+  padding: 150px 10px 10px 10px;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0);
+  width: 370px;
+  height: 50px;
+  font-size: 50px;
+  overflow: auto;
+
+  /* white-space: nowrap; */
 }
-input::placeholder{
-    color: white;
+input::placeholder {
+  color: white;
 }
-.divide{
-    font-size: 50px;
+.divide {
+  font-size: 50px;
 }
 .orange:hover,
 .black:hover,
-.grey:hover{
-    opacity: 0.9;
+.grey:hover {
+  opacity: 0.9;
 }
