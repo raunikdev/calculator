@@ -6,21 +6,27 @@ function Calculator(){
     const addvalueHandler =(value)=>{
         setInputNumber((prev)=>prev+value)
     }
-    const answer =()=>{
-        const result = evaluate(inputValue);
-        setInputNumber(result);
-    }
+    const answer = () => {
+        try {
+            const result = evaluate(inputValue);
+            setInputNumber(result);
+        } catch (error) {
+            alert("Invalid expression!");
+        }
+    };
+
     return(
         <>
             <div className="allcalculator">
-                <input value={inputValue}
+                <input className='display'
+                       value={inputValue}
                        placeholder="0"
                        readOnly/>
                 <div className="all-buttons">
                     <div className="grey" onClick={()=>setInputNumber("")}>AC</div>
                     <div className="grey" onClick={() => setInputNumber(prev => prev.slice(0, -1))}>C</div>
-                    <div className="grey">%</div>
-                    <div className="orange"><span className='divide'>&divide;</span></div>
+                    <div className="grey"  onClick={()=>addvalueHandler("%")}>%</div>
+                    <div className="orange"  onClick={()=>addvalueHandler("/")}><span className='divide'>&divide;</span></div>
 
 
                     <div className="black" onClick={()=>addvalueHandler(7)}>7</div>
