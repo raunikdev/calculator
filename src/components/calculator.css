@@ -6,7 +6,7 @@ body{
 }
 .allcalculator{
     display: grid;
-    width: 390px;
+    max-width: 390px;
 
 }
 .all-buttons{
@@ -48,7 +48,7 @@ input{
     padding: 200px 10px 10px 10px;
     text-align: right;
     background-color: rgba(0, 0, 0, 0);
-    width: 370px;
+    width: 100%;
     font-size: 50px;
 }
 .divide{
