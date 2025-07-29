@@ -53,6 +53,9 @@ input{
     overflow-x: auto;
     white-space: nowrap;
 }
+input::placeholder{
+    color: white;
+}
 .divide{
     font-size: 50px;
 }
